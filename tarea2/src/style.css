@@ -1,0 +1,88 @@
+/* Asegura que html y body ocupen toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hace que el contenedor principal (root) crezca para ocupar el espacio disponible */
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Styling for header and footer */
+header, footer {
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Ensures footer is at the bottom */
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer al final */
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 20px;
+}
+
+/* Styling for headings */
+h2 {
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Course list styles */
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin: 10px 0;
+}
+
+.course-list a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.course-list a:hover {
+    text-decoration: underline;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
